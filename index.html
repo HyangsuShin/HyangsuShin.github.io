@@ -4,71 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <title>INFO</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        hr {
+            border-top: 4px dashed burlywood;
+        }
 
+        h2 {
+            margin-top: 50px;
+        }
+    </style>
 </head>
 
 <body>
-    <ol type="I">
-        <img src="picture of me.jpg" alt="picture of me">
+
+    <div class="bookmark">
+        <ul class="bookmark">
+            <li><a href="index.html" class="link">Info</a></li>
+            <li><a href="portfolio.html" class="link">PortFolio</a></li>
+            <li><a href="resume.pdf" class="link" target="_blank">Resume</a></li>
+            <li><a href="#contact" class="link">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div class="content">
+        <img src="picture of me.png" alt="picture of me" class="picture">
         <hr>
-        <li>
-            <h2>ABOUT ME</h2>
-            <p>Trying to become a game developer "<br>I am currently taking a game programming program at st.lawrence
-                college.
-                Besides game programming, I am studying html related to web design, and I plan to learn Css and Js in
-                the
+        <h2>ABOUT ME</h2>
+        <div class="about_me">
+            <p>
+                <p style="text-align: center; font-weight:bolder;">"Trying to become a game developer"</p>
+                I am currently taking a game programming program at st.lawrence college.
+                Besides game programming, I am studying HTML related to web design, and I plan to learn CSS and
+                JAVASCRIPT
+                in the
                 future. Also my previous job was a mechanical designer, I can use some 2d and 3d programs. I am very
                 interested
-                in being able to express what I think externally.<br>When I start anything, I do it right! Let's make
-                something
-                really fun and passionate together!</p>
-            <h3><a href="#contact">Move to Contact</a></h3>
-        </li>
-        <li>
-            <h2><a href="Resume.pdf">Resume</a></h2>
-        </li>
-        <li>
-            <h2><a href="portfolio.html">PortFolio</a></h2>
-        </li>
-        <li>
-            <h2>CAPABILITY</h2>
-            <ul>
-                <li>HTML</li>
-                <li>C++</li>
-                <li>GIMP</li>
-                <li>AUTOCAD</li>
-                <li>SOLIDWORKS</li>
-                <li>PRO-E</li>
-            </ul>
-        </li>
-        <li>
-            <h2>HOBBIES & INTERESTS</h2>
-            <table border="1" width="30%">
-                <tr>
-                    <th colspan="3" align="center">Top3</th>
-                </tr>
-                <tr align="center">
-                    <td> <img src="bicycle.jpg" alt="bicycle"></td>
-                    <td> <img src="yoga.jpg" alt="yoga"></td>
-                    <td> <img src="cook.jpg" alt="cook"></td>
-                </tr>
-                <tr align="center">
-                    <td>cycling</td>
-                    <td>yoga</td>
-                    <td>cook</td>
-                </tr>
-            </table>
-        </li>
-    </ol>
+                in being able to express what I think externally.<br>
+                When I start anything, I do it right! Let's make something really fun and passionate together!
+            </p>
+        </div>
+
+        <h2>CAPABILITY</h2>
+        <ul id="capability">
+            <li>HTML</li>
+            <li>C++</li>
+            <li>GIMP</li>
+            <li>AUTOCAD</li>
+            <li>SOLIDWORKS</li>
+            <li>PRO-E</li>
+        </ul>
+
+        <h2>HOBBIES & INTERESTS</h2>
+        <table id="interests">
+            <tr class="row header">
+                <th colspan="3">Top3</th>
+            </tr>
+            <tr class="row">
+                <td> <img src="bicycle.png" alt="bicycle"></td>
+                <td> <img src="yoga.png" alt="yoga"></td>
+                <td> <img src="cook.png" alt="cook"></td>
+            </tr>
+            <tr class="row">
+                <td>cycling</td>
+                <td>yoga</td>
+                <td>cook</td>
+            </tr>
+        </table>
+    </div>
+
     <hr>
-    <h3><a name="contact">CONTACT ME</a></h3>
-    <a href="mailto:shin4873@gmail.com">Email</a>
-    <a href="https://blog.naver.com/shin4873">BLOG</a>
-    <a href="https://www.instagram.com/hyangsushin/">INSTAGRAM</a>
-    <p><br>Feel free to contact me!<br>My image made by <img src="ToonMe.jpg" alt="ToonMe" width="100" hight="10"
-            usemap="#mymap"><map name="mymap"><area shape=" rect" coords="0,0,100,20" href="https://toonme.com/"
-                alt="ToonMe"> from <a href="https://pho.to/" title="Linerock Investments LTD"> Linerock Investments
-                LTD</a></p>
+
+    <div id="contact">
+        <h3><a name="contact" class="contact_me">CONTACT ME</a></h3>
+        <span class="address">
+            <a href="mailto:shin4873@gmail.com">Email</a>
+            <a href="https://blog.naver.com/shin4873">BLOG</a>
+            <a href="https://www.instagram.com/hyangsushin/">INSTAGRAM</a>
+        </span>
+        <p>Feel free to contact me!<br>My image made by <img src="ToonMe.jpg" alt="ToonMe" height="16px" usemap="#mymap"><map
+                name="mymap"><area shape=" rect" coords="0,0,100,16" href="https://toonme.com/" alt="ToonMe"> from <a
+                    href="https://pho.to/" title="Linerock Investments LTD"
+                    style="text-decoration: none; color: black;"> Linerock Investments
+                    LTD</a></p>
+    </div>
 
 </body>
 

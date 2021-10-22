@@ -1,0 +1,183 @@
+/*index.html & portfolio.html*/
+html {
+    background-color: rgb(239, 231, 227);
+}
+
+body {
+    color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h2 {
+    text-align: center;
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bookmark {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bookmark>li {
+    float: left;
+}
+
+.link {
+    display: inline-block;
+    color: brown;
+    text-align: center;
+    margin: 14px;
+    padding: 10px;
+    text-decoration: none;
+    border: 5px solid white;
+    border-radius: 12px;
+}
+
+.link:hover {
+    display: inline-block;
+    color: white;
+    font-weight: bolder;
+    background-color: tomato;
+}
+
+/*index.html*/
+
+.picture {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.about_me {
+    width: 690px;
+    margin: auto;
+}
+
+#capability {
+    list-style-type: none;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#interests,
+#interests td,
+#interests th {
+    border: 2px solid black;
+}
+
+#interests {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+.header {
+    background-color: purple;
+    color: white;
+}
+
+.row {
+    text-align: center;
+}
+
+.row:hover {
+
+    background-color: yellowgreen;
+    color: red;
+}
+
+/*index.html & portfolio.html*/
+
+#contact {
+    text-align: center;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+#contact>p {
+    font-style: italic;
+    color: gray;
+}
+
+.contact_me {
+    color: burlywood;
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: fantasy;
+}
+
+.address a {
+    color: black;
+    font-size: 30px;
+    font-family: monospace;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+/*portfolio.html*/
+
+div.hello {
+    clear: left;
+    padding-top: 100px;
+    margin-bottom: 70px;
+}
+
+h1 {
+    font-family: monospace;
+}
+
+#name,
+#dream {
+    text-shadow: 2px 2px 5px red;
+}
+
+p.hello {
+    width: 800px;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+.works {
+    text-align: right;
+    color: rosybrown;
+    text-shadow: 2px 2px 2px rgb(196, 169, 169);
+}
+
+.jobs {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jobs td{
+    padding: 20px;
+}
+
+.jobs img {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+
+.jobs h3{
+    text-align: center;
+}
+
+.jobs p {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
