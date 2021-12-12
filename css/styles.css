@@ -1,10 +1,16 @@
-/*index.html & portfolio.html*/
-html {
-    background-color: rgb(239, 231, 227);
-}
-
+/*common*/
 body {
     color: black;
+    position: relative;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.margin10{
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -15,169 +21,265 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.bookmark {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+header {
+    background: linear-gradient(pink, transparent);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
 }
 
-.bookmark>li {
-    float: left;
+.bookmark {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-content: center;
 }
 
 .link {
     display: inline-block;
-    color: brown;
+    color: white;
     text-align: center;
-    margin: 14px;
+    margin: 10px 50px;
     padding: 10px;
     text-decoration: none;
-    border: 5px solid white;
+    border: 5px solid transparent;
     border-radius: 12px;
+    font-weight: bold;
 }
 
 .link:hover {
-    display: inline-block;
-    color: white;
-    font-weight: bolder;
-    background-color: tomato;
+    background-color: rgb(250, 148, 165);
+    border: 5px solid white;
+}
+
+/*footer*/
+
+#contact {
+    border-top: 5px dotted pink;
+    border-top-left-radius: 100% 100%;
+    border-top-right-radius: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+#contact span{
+    width: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#contact img{
+height: 5vh;
 }
 
 /*index.html*/
+/*introduction*/
+#introduction{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
-.picture {
-    clear: both;
+#introduction .inner{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#introduction .picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 30%;
+}
+
+#introduction .item{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#introduction .title{
+    margin: auto auto 0 auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: pink;
+    font-family: cursive;
 }
 
 .about_me {
-    width: 690px;
-    margin: auto;
+    margin:16px auto auto auto;
+    font-family: sans-serif;
+    line-height: 1.2;
+    color: rgb(173, 64, 100);
 }
+
+/*capability*/
 
 #capability {
-    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(white, rgb(250, 192, 203), white);
+
+}
+
+#capability table{
     display: table;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#interests,
-#interests td,
-#interests th {
-    border: 2px solid black;
-}
-
-#interests {
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    margin-bottom: 50px;
-}
-
-.header {
-    background-color: purple;
-    color: white;
-}
-
-.row {
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 80%;
+    height: 80vh;
 }
 
-.row:hover {
-
-    background-color: yellowgreen;
-    color: red;
-}
-
-/*index.html & portfolio.html*/
-
-#contact {
-    text-align: center;
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-}
-
-#contact>p {
-    font-style: italic;
-    color: gray;
-}
-
-.contact_me {
-    color: burlywood;
+#capability thead {
     font-size: 50px;
-    text-decoration: underline;
-    font-family: fantasy;
+    color: rgb(211, 128, 156);
+    font-weight: bold;
+    font-family: cursive;
 }
 
-.address a {
-    color: black;
-    font-size: 30px;
-    font-family: monospace;
-    margin: 0px 10px;
-    text-decoration: none;
+#capability tr.row1 img {
+    margin-top: 10%;
+    width: 70%;
+    box-sizing: border-box;
 }
+
+#capability tr.row2 img{
+    margin-top: 10%;
+width: 40%;
+box-sizing: border-box;
+}
+
+#capability tr.row3 img{
+    box-sizing: border-box;
+}
+
 
 /*portfolio.html*/
 
-div.hello {
+/*Greetings*/
+
+#Greetings {
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#Greetings>.hello {
     clear: left;
-    padding-top: 100px;
-    margin-bottom: 70px;
 }
 
-h1 {
-    font-family: monospace;
+#Greetings .para1 {
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: bold;
+    color: pink;
 }
 
-#name,
-#dream {
+#Greetings #name, #dream {
     text-shadow: 2px 2px 5px red;
 }
 
-p.hello {
+#Greetings .para2 {
+    font-size: 30px;
     width: 800px;
+    font-family: sans-serif;
     margin-top: 50px;
     font-style: italic;
+    color: rgb(211, 128, 156);
 }
 
-.works {
+/*recent works*/
+
+#works{
+    height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#works>.works {
+    font-size: 30px;
     text-align: right;
     color: rosybrown;
     text-shadow: 2px 2px 2px rgb(196, 169, 169);
+    border-bottom: 5px dotted rosybrown;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
 }
 
-.jobs {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+#works .jobs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.jobs td{
-    padding: 20px;
-}
-
-.jobs img {
-    height: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50px;
-}
-
-
-.jobs h3{
+#works table {
     text-align: center;
+    height: 80vh;
 }
 
-.jobs p {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
+#works td{
+    vertical-align: middle;
 }
+
+#works .image1 img {
+    width: 60%;
+    border-radius: 10%;
+}
+
+#works .image2 img {
+    width: 40%;
+    border-radius: 10%;
+}
+
+#works .discription h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+#works .discription p {
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+/*contact.html*/
+
+#sendme {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sendme .Say{
+    font-size: 100px;
+    font-family: cursive;
+    color: pink;
+}
+
+#sendme .days{
+    font-size: 20px;
+    font-family: cursive;
+    color: pink;
+    margin: 5% 0;
+}
+
+#sendme label{
+    font-size: 20px;
+    font-weight: bold;
+    color: pink;
+}
+

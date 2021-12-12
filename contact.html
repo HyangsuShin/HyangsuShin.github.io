@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>INFO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="contact">
+
+    <header>
+        <div class="inner clearfix">
+            <ul class="bookmark margin10">
+                <li><a href="index.html" class="link">Info</a></li>
+                <li><a href="portfolio.html" class="link">PortFolio</a></li>
+                <li><a href="./Resume.pdf" class="link" target="_blank">Resume</a></li>
+                <li><a href="#contact" class="link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="sendme">
+        <div class="inner">
+            <div class="Say">Say Hi.</div>
+            <div class="days">I typically will within 3 days. Thank you!</div>
+            <form method="post" action="form.php">
+                <label>Name</label><br>
+                <input style="margin-top: 8px;" name="name" size="30" required type="text">
+                <br><br>
+                <label>Email</label><br>
+                <input style="margin-top: 8px;" name="email" type="email" size="30" required >
+                <br><br>
+                <label>Message</label><br>
+                <textarea style="margin-top: 8px;" name="message" maxlength="150" required rows="6"
+                    cols="50"></textarea>
+                <br><br>
+                <input id="submit" name="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script>
+        const constraints = {
+            name: {
+                presence: { allowEmpty: false }
+            },
+            email: {
+                presence: { allowEmpty: false },
+                email: true
+            },
+            message: {
+                presence: { allowEmpty: false }
+            }
+        };
+  
+        const form = document.getElementById('contact-form');
+  
+        form.addEventListener('submit', function (event) {
+            const formValues = {
+                name: form.elements.name.value,
+                email: form.elements.email.value,
+                message: form.elements.message.value
+            };
+  
+            const errors = validate(formValues, constraints);
+  
+            if (errors) {
+                event.preventDefault();
+                const errorMessage = Object
+                    .values(errors)
+                    .map(function (fieldValues) {
+                        return fieldValues.join(', ')
+                    })
+                    .join("\n");
+  
+                alert(errorMessage);
+            }
+        }, false);
+    </script>
+
+    <footer id="contact">
+        <div class="inner">
+            <span class="address">
+                <a href="mailto:shin4873@gmail.com"><img src="./image/email.png" alt="email"></a>
+                <a href="https://www.facebook.com/hyangsushin/"><img src="./image/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/hyangsushin/"><img src="./image/instagram.png" alt="instagram"></a>
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

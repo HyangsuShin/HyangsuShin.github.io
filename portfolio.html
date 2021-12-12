@@ -4,98 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <style>
-        hr {
-            border-top: 4px dashed burlywood;
-        }
-
-        h2 {
-            margin-top: 50px;
-        }
-    </style>
 </head>
 
 <body>
 
-    <div class="bookmark">
-        <ul class="bookmark">
-            <li><a href="index.html" class="link">Info</a></li>
-            <li><a href="portfolio.html" class="link">PortFolio</a></li>
-            <li><a href="Resume.pdf" class="link" target="_blank">Resume</a></li>
-            <li><a href="#contact" class="link">Contact</a></li>
-        </ul>
+    <header>
+        <div class="inner clearfix">
+            <ul class="bookmark margin10">
+                <li><a href="index.html" class="link">Info</a></li>
+                <li><a href="portfolio.html" class="link">PortFolio</a></li>
+                <li><a href="./Resume.pdf" class="link" target="_blank">Resume</a></li>
+                <li><a href="contact.html" class="link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section id="Greetings" class="clearfix">
+        <div class="hello">
+            <p class="para1">Hello! My name is <span id="name">Hyangsu Shin</span> <br>
+                My dream is becoming a <span id="dream">game developer</span> that solves real problems.</p>
+            <p class="para2">Based in Seoul, South Korea, but willing to travel around the world to find any exciting and
+                field-changing
+                works.
+                Also, always feel free to call for fun projects. Let's make our lives even better and better!</p>
+        </div>
+    </section>
+
+    <div id="works">
+        <h1 class="works">RECENT WORKS</h1>
+        <div class="jobs">
+            <table>
+                <colgroup>
+                    <col width="33%" />
+                    <col width="33%" />
+                    <col width="33%" />
+                </colgroup>
+                <tr class="image1">
+                    <td>
+                        <img src="./image/Problem solving_2-1.jpg" alt="Problem solving_2-1">
+                    </td>
+                    <td>
+                        <img src="./image/Problem solving_2-2.jpg" alt="Problem solving_2-2">
+                    </td>
+                    <td>
+                        <img src="./image/Walkthroughs_2.jpg" alt="workthroughs_2">
+                    </td>
+                </tr>
+                <tr class="discription">
+                    <td>
+                        <h3>C++ HANDOUT 1</h3>
+                        <p>This handout is about Writing a program that takes ONE number as INPUT and OUTPUTS the value
+                            multiplied by 4
+                        </p>
+                    </td>
+                    <td>
+                        <h3>C++ HANDOUT 2</h3>
+                        <p>This handout is about Writing a program that prompts the user for 2 DIFFERENT integers, and order
+                            them to do
+                            mathematical calculations.
+                        </p>
+                    </td>
+                    <td>
+                        <h3>C++ HANDOUT 3</h3>
+                        <p>This handout is about Writing a program that prompts the user for 4 different information and order
+                            them to do
+                            their stat calculations.
+                        </p>
+                    </td>
+                </tr>
+                <tr class="image2">
+                    <td>
+                        <img src="Redball.gif" alt="redball">
+                    </td>
+                    <td>
+                        <img src="stickman.gif" alt="stickman">
+                    </td>
+                    <td>
+                        <img src="mycreation.gif" alt="mycreation">
+                    </td>
+                </tr>
+                <tr class="discription">
+                    <td>
+                        <h3>graphic design Handout 1</h3>
+                        <p>Animated the way the red ball falls.</p>
+                    </td>
+                    <td>
+                        <h3>graphic design Handout 2</h3>
+                        <p>Animated jumping stick man.</p>
+                    </td>
+                    <td>
+                        <h3>graphic design Handout 3</h3>
+                        <p>Animated emoticons.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 
-
-    <div class="hello">
-        <h1>Hello! My name is <span id="name">Hyangsu Shin</span> <br>
-            My dream is becoming a <span id="dream">game developer</span> that solves real problems.</h1>
-        <p class="hello">Based in Seoul, South Korea, but willing to travel around the world to find any exciting and
-            field-changing
-            works.
-            Also, always feel free to call for fun projects: Let's make our lives even better and better!</p>
-    </div>
-
-    <hr>
-
-    <h2 class="works">RECENT WORKS</h2>
-    <table class="jobs">
-        <tr>
-            <td>
-                <img src="Problem solving_2-1.jpg" alt="Problem solving_2-1">
-                <h3>C++ HANDOUT 1</h3>
-                <p>This handout is about Writing a program that takes ONE number as INPUT and OUTPUTS the value
-                    multiplied by 4
-                </p>
-            </td>
-            <td>
-                <img src="Problem solving_2-2.jpg" alt="Problem solving_2-2">
-                <h3>C++ HANDOUT 2</h3>
-                <p>This handout is about Writing a program that prompts the user for 2 DIFFERENT integers, and order
-                    them to do
-                    mathematical calculations.
-                </p>
-            </td>
-            <td>
-                <img src="Walkthroughs_2.jpg" alt="workthroughs_2">
-                <h3>C++ HANDOUT 3</h3>
-                <p>This handout is about Writing a program that prompts the user for 4 different information and order
-                    them to do
-                    their stat calculations.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="Redball.gif" alt="redball">
-                <h3>graphic design Handout 1</h3>
-                <p>Animated the way the red ball falls.</p>
-            </td>
-            <td>
-                <img src="stickman.gif" alt="stickman">
-                <h3>graphic design Handout 2</h3>
-                <p>Animated jumping stick man.</p>
-            </td>
-            <td>
-                <img src="mycreation.gif" alt="mycreation">
-                <h3>graphic design Handout 3</h3>
-                <p>Animated emoticons.</p>
-            </td>
-        </tr>
-    </table>
-
-    <HR>
-
-    <div id="contact">
-        <h3><a name="contact" class="contact_me">CONTACT ME</a></h3>
-        <span class="address">
-            <a href="mailto:shin4873@gmail.com">Email</a>
-            <a href="https://blog.naver.com/shin4873">BLOG</a>
-            <a href="https://www.instagram.com/hyangsushin/">INSTAGRAM</a>
-        </span>
-        <p>Feel free to contact me!</p>
-    </div>
+    <footer id="contact">
+        <div class="inner">
+            <span class="address">
+                <a href="mailto:shin4873@gmail.com"><img src="./image/email.png" alt="email"></a>
+                <a href="https://www.facebook.com/hyangsushin/"><img src="./image/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/hyangsushin/"><img src="./image/instagram.png" alt="instagram"></a>
+            </span>
+        </div>
+    </footer>
 
 </body>
 
