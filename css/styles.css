@@ -1,4 +1,10 @@
 /*common*/
+html {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
 body {
     color: black;
     position: relative;
@@ -10,9 +16,13 @@ body {
     display: block;
 }
 
-.margin10{
+.margin10 {
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.item {
+    scroll-snap-align: start;
 }
 
 h2 {
@@ -58,35 +68,37 @@ header {
 /*footer*/
 
 #contact {
+    scroll-snap-stop: always;
+    scroll-snap-align: end;
     border-top: 5px dotted pink;
     border-top-left-radius: 100% 100%;
     border-top-right-radius: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 20vh;
 }
 
-#contact span{
+#contact span {
     width: 50vh;
     display: flex;
     justify-content: space-around;
     align-content: center;
 }
 
-#contact img{
-height: 5vh;
+#contact img {
+    height: 5vh;
 }
 
 /*index.html*/
 /*introduction*/
-#introduction{
+#introduction {
     height: 100vh;
     display: flex;
     align-items: center;
 }
 
-#introduction .inner{
+#introduction .inner {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -99,7 +111,7 @@ height: 5vh;
     width: 30%;
 }
 
-#introduction .item{
+#introduction .introduction {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -107,7 +119,7 @@ height: 5vh;
     align-content: center;
 }
 
-#introduction .title{
+#introduction .title {
     margin: auto auto 0 auto;
     font-size: 50px;
     font-weight: bold;
@@ -116,7 +128,7 @@ height: 5vh;
 }
 
 .about_me {
-    margin:16px auto auto auto;
+    margin: 16px auto auto auto;
     font-family: sans-serif;
     line-height: 1.2;
     color: rgb(173, 64, 100);
@@ -132,7 +144,7 @@ height: 5vh;
 
 }
 
-#capability table{
+#capability table {
     display: table;
     text-align: center;
     margin-top: 100px;
@@ -154,13 +166,13 @@ height: 5vh;
     box-sizing: border-box;
 }
 
-#capability tr.row2 img{
+#capability tr.row2 img {
     margin-top: 10%;
-width: 40%;
-box-sizing: border-box;
+    width: 40%;
+    box-sizing: border-box;
 }
 
-#capability tr.row3 img{
+#capability tr.row3 img {
     box-sizing: border-box;
 }
 
@@ -188,7 +200,8 @@ box-sizing: border-box;
     color: pink;
 }
 
-#Greetings #name, #dream {
+#Greetings #name,
+#dream {
     text-shadow: 2px 2px 5px red;
 }
 
@@ -198,18 +211,13 @@ box-sizing: border-box;
     font-family: sans-serif;
     margin-top: 50px;
     font-style: italic;
+    line-height: 1.2;
     color: rgb(211, 128, 156);
 }
 
 /*recent works*/
 
-#works{
-    height: 100vh;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-#works>.works {
+#works th {
     font-size: 30px;
     text-align: right;
     color: rosybrown;
@@ -219,40 +227,84 @@ box-sizing: border-box;
     margin-bottom: 3%;
 }
 
-#works .jobs{
+#works .table {
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 #works table {
-    text-align: center;
     height: 80vh;
+    width: 100%;
+    text-align: center;
 }
 
-#works td{
+#works td {
     vertical-align: middle;
 }
 
-#works .image1 img {
+#works .row1>.image img {
     width: 60%;
     border-radius: 10%;
 }
 
-#works .image2 img {
-    width: 40%;
+#works .row2>.image img {
+    width: 60%;
     border-radius: 10%;
 }
 
-#works .discription h3{
+#works .row3>.image img {
+    width: 60%;
+    border-radius: 10%;
+}
+
+
+#works .discription h3 {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 2%;
 }
 
 #works .discription p {
-    padding: 0 5%;
+    padding: 0 10%;
     box-sizing: border-box;
+}
+
+table td {
+    border: 5px dotted rosybrown;
+
+}
+
+table tr:first-child td {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr:last-child td {
+    border: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+/*resume.html*/
+
+#resume {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume iframe {
+    width: 80%;
+    height: 70vh;
 }
 
 /*contact.html*/
@@ -264,22 +316,25 @@ box-sizing: border-box;
     align-items: center;
 }
 
-#sendme .Say{
+#sendme .Say {
     font-size: 100px;
     font-family: cursive;
     color: pink;
 }
 
-#sendme .days{
+#sendme .days {
     font-size: 20px;
     font-family: cursive;
     color: pink;
     margin: 5% 0;
 }
 
-#sendme label{
+#sendme form {
+    display: block;
+}
+
+#sendme label {
     font-size: 20px;
     font-weight: bold;
     color: pink;
 }
-
