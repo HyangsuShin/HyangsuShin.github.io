@@ -33,7 +33,7 @@ h2 {
 
 /* header */
 header {
-    background: linear-gradient(pink, transparent);
+    background: linear-gradient(rgb(250, 148, 165), transparent);
     position: fixed;
     top: 0;
     left: 0;
@@ -80,7 +80,7 @@ header {
 }
 
 .link:hover {
-    color: rgb(250, 148, 165);
+    color: rgb(255, 239, 242);
 }
 
 /*footer*/
