@@ -327,6 +327,27 @@ header {
     border-right: 0;
 }
 
+#works table a {
+    color: rgb(226, 196, 196);
+    font-weight: bold;
+}
+
+#works table a:hover {
+    color: rosybrown;
+}
+
+#works table video{
+    border: 8px solid;
+    border-image: linear-gradient(180deg, rgb(255, 0, 221), orange);
+    border-image-slice: 1;
+}
+
+#works table img{
+    border: 8px solid transparent;
+    border-image: linear-gradient(180deg, rgb(255, 0, 221), orange);
+    border-image-slice: 1;
+}
+
 /*resume.html*/
 
 #resume {
